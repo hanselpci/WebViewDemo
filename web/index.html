@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webview 文本查看器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>本地文本文件查看器</h1>
+        <!-- 文件选择按钮（仅允许选择 .txt 文本文件） -->
+        <input type="file" id="fileSelector" accept=".txt" hidden>
+        <button id="selectBtn">选择本地文本文件</button>
+
+        <!-- 文本内容显示区（默认提示无文件，加载后显示内容） -->
+        <div class="content-area" id="contentArea">
+            <p class="empty-tip">未选择文件，请点击上方按钮选择 .txt 文件</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

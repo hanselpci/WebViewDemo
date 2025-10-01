@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #4285f4;
+    padding-bottom: 10px;
+}
+
+#selectBtn {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#selectBtn:hover {
+    background-color: #3367d6;
+}
+
+.content-area {
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    overflow-y: auto; /* 内容过长时滚动 */
+    background-color: #fafafa;
+}
+
+.empty-tip {
+    color: #999;
+    text-align: center;
+    line-height: 400px; /* 垂直居中提示文字 */
+}
+
+#contentArea pre {
+    font-family: "Consolas", monospace; /* 等宽字体，适配代码/纯文本 */
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap; /* 自动换行，避免横向滚动 */
+    word-break: break-all;
+}
